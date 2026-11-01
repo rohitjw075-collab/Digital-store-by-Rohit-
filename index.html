@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#07111f">
+  <title>Waghmare Digital Solutions | Your Digital World, Our Solutions</title>
+  <meta name="description" content="Websites, apps, branding, automation and digital solutions for growing businesses.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+  <script src="https://cdn.jsdelivr.net/npm/qrcodejs@1.0.0/qrcode.min.js"></script>
+  <script defer src="app.js"></script>
+</head>
+<body>
+  <div class="ambient ambient-one"></div><div class="ambient ambient-two"></div>
+  <header class="topbar">
+    <a class="brand" href="#home"><span class="brand-mark">W</span><span>WAGHMARE <small>DIGITAL SOLUTIONS</small></span></a>
+    <button class="mobile-menu" id="mobileMenu" aria-label="Toggle navigation">☰</button>
+    <nav id="navLinks">
+      <a href="#services">Services</a><a href="#how">How it works</a><a href="#about">About</a>
+      <button class="btn btn-small btn-ghost" id="openAuth">Sign in</button>
+      <button class="btn btn-small btn-primary" id="startProject">Start a project <span>↗</span></button>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero section" id="home">
+      <div class="hero-copy">
+        <div class="eyebrow"><span class="pulse"></span> DIGITAL SERVICES • BUILT FOR GROWTH</div>
+        <h1>Your ideas.<br><span class="gradient-text">Our digital</span><br>solutions.</h1>
+        <p class="hero-lead">We help people and businesses move forward with professional websites, apps, branding and smart digital tools.</p>
+        <div class="hero-actions"><button class="btn btn-primary" id="heroOrder">Start your project <span>↗</span></button><a class="btn btn-ghost" href="#services">Explore services ↓</a></div>
+        <div class="trust-row"><div class="avatar-stack"><i>W</i><i>D</i><i>S</i></div><span>One digital partner for your next big idea</span></div>
+      </div>
+      <div class="hero-visual">
+        <div class="orbit orbit-a"></div><div class="orbit orbit-b"></div>
+        <div class="visual-card main-visual">
+          <div class="visual-top"><span class="dots">● ● ●</span><span>WDS / STUDIO</span><span>↗</span></div>
+          <div class="visual-content"><div class="mini-label">YOUR NEXT CHAPTER</div><h2>Make it<br><em>digital.</em></h2><div class="visual-line"></div><div class="visual-bottom"><span>DESIGN · BUILD · GROW</span><b>01 / 03</b></div></div>
+        </div>
+        <div class="float-chip chip-web"><span>⌘</span><div><b>Web experiences</b><small>Designed to perform</small></div></div>
+        <div class="float-chip chip-ai"><span>✳</span><div><b>Smart solutions</b><small>Built around you</small></div></div>
+        <div class="hero-glow"></div>
+      </div>
+    </section>
+
+    <section class="metrics section">
+      <div><strong>01</strong><span>One point of contact</span></div><div><strong>06+</strong><span>Digital service categories</span></div><div><strong>100%</strong><span>Project-focused approach</span></div><div><strong>∞</strong><span>Room to grow</span></div>
+    </section>
+
+    <section class="section services-section" id="services">
+      <div class="section-heading"><div><div class="eyebrow">WHAT WE DO</div><h2>Everything you need<br>to <span class="gradient-text">go digital.</span></h2></div><p>Choose a service and tell us what you have in mind. We’ll review your requirements and get back with the next steps.</p></div>
+      <div class="service-grid" id="serviceGrid">
+        <article class="service-card"><span class="service-icon">⌘</span><h3>Website Development</h3><p>Business websites, portfolios, landing pages and online stores.</p><button data-service="Website Development">Request service ↗</button></article>
+        <article class="service-card"><span class="service-icon">▣</span><h3>App Development</h3><p>Mobile-friendly web apps and Android app project support.</p><button data-service="App Development">Request service ↗</button></article>
+        <article class="service-card"><span class="service-icon">✳</span><h3>Graphic & Branding</h3><p>Logos, posters, banners, invitations and brand identity.</p><button data-service="Graphic & Branding">Request service ↗</button></article>
+        <article class="service-card"><span class="service-icon">✧</span><h3>AI & Automation</h3><p>Chatbots, enquiry flows and practical business automation.</p><button data-service="AI & Automation">Request service ↗</button></article>
+        <article class="service-card"><span class="service-icon">▤</span><h3>Business Software</h3><p>Billing, inventory, spreadsheets and management tools.</p><button data-service="Business Software">Request service ↗</button></article>
+        <article class="service-card"><span class="service-icon">◉</span><h3>Digital Marketing</h3><p>Social media creatives, content support and online presence.</p><button data-service="Digital Marketing">Request service ↗</button></article>
+      </div>
+    </section>
+
+    <section class="how-section section" id="how">
+      <div class="section-heading"><div><div class="eyebrow">SIMPLE PROCESS</div><h2>From idea to<br><span class="gradient-text">done.</span></h2></div><p>A clear process keeps your project organised from the first enquiry to final delivery.</p></div>
+      <div class="steps"><div><b>01</b><h3>Tell us</h3><p>Choose a service and share your requirements.</p></div><div><b>02</b><h3>Get reviewed</h3><p>We review scope, timeline and estimated pricing.</p></div><div><b>03</b><h3>Confirm</h3><p>Approve the quote and follow the payment instructions.</p></div><div><b>04</b><h3>Track & receive</h3><p>Follow progress and receive your completed work.</p></div></div>
+    </section>
+
+    <section class="cta-section section" id="about"><div class="cta-panel"><div class="eyebrow">LET'S BUILD SOMETHING USEFUL</div><h2>Your next idea<br>starts <span class="gradient-text">right here.</span></h2><p>Tell Waghmare Digital Solutions what you want to create.</p><button class="btn btn-primary" id="ctaOrder">Discuss a project ↗</button></div></section>
+  </main>
+
+  <footer class="footer"><a class="brand" href="#home"><span class="brand-mark">W</span><span>WAGHMARE <small>DIGITAL SOLUTIONS</small></span></a><p>Your Digital World, Our Solutions.</p><div><a href="#services">Services</a><a href="#" id="footerAccount">Customer account</a><a href="#" id="footerAdmin">Admin</a></div><small>© <span id="year"></span> Waghmare Digital Solutions. All rights reserved.</small></footer>
+
+  <!-- Authentication -->
+  <dialog id="authDialog" class="modal"><form method="dialog" class="modal-close"><button aria-label="Close">×</button></form><div class="modal-inner"><div class="eyebrow">CUSTOMER ACCESS</div><h2 id="authTitle">Welcome back.</h2><p class="muted" id="authSubtitle">Sign in to manage your projects.</p><form id="authForm" class="form-stack"><label>Email address<input type="email" id="authEmail" required autocomplete="email" placeholder="you@example.com"></label><label>Password<input type="password" id="authPassword" required minlength="6" autocomplete="current-password" placeholder="At least 6 characters"></label><button class="btn btn-primary full" id="authSubmit" type="submit">Sign in</button></form><p class="switch-auth" id="authSwitch">New here? <button id="showSignup">Create an account</button></p><p class="form-note">Use an email you can access. Email confirmation may be required.</p></div></dialog>
+
+  <!-- Customer order -->
+  <dialog id="orderDialog" class="modal modal-wide"><form method="dialog" class="modal-close"><button aria-label="Close">×</button></form><div class="modal-inner"><div class="eyebrow">NEW PROJECT REQUEST</div><h2>Let's get started.</h2><p class="muted">Share a few details. We’ll review your request before confirming price and timeline.</p>
+    <form id="orderForm" class="form-grid">
+      <label>Service<select id="orderService" required><option value="">Choose a service</option><option>Website Development</option><option>App Development</option><option>Graphic & Branding</option><option>AI & Automation</option><option>Business Software</option><option>Digital Marketing</option><option>Other</option></select></label>
+      <label>Your name<input id="customerName" required maxlength="100" placeholder="Full name"></label>
+      <label>Contact number<input id="customerPhone" required inputmode="tel" maxlength="20" placeholder="Mobile number"></label>
+      <label>Email<input id="customerEmail" type="email" required placeholder="Email address"></label>
+      <label class="span-two">Project requirements<textarea id="orderDetails" required minlength="10" maxlength="3000" rows="4" placeholder="Describe what you need, preferred features and any deadline..."></textarea></label>
+      <label class="span-two">Reference files (optional)<input id="orderFiles" type="file" multiple></label>
+      <div class="span-two form-actions"><button class="btn btn-primary" type="submit">Submit project request ↗</button><span class="form-note">No payment is collected at this stage.</span></div>
+    </form>
+  </div></dialog>
+
+  <!-- Customer account -->
+  <dialog id="accountDialog" class="modal modal-wide"><form method="dialog" class="modal-close"><button aria-label="Close">×</button></form><div class="modal-inner"><div class="eyebrow">CUSTOMER PORTAL</div><div class="panel-title"><div><h2>Your projects.</h2><p class="muted" id="accountEmail"></p></div><button class="btn btn-ghost btn-small" id="signOut">Sign out</button></div><div id="customerOrders" class="order-list"><p class="muted">Sign in to view your orders.</p></div></div></dialog>
+
+  <!-- Payment dialog -->
+  <dialog id="paymentDialog" class="modal"><form method="dialog" class="modal-close"><button aria-label="Close">×</button></form><div class="modal-inner"><div class="eyebrow">PAYMENT INSTRUCTIONS</div><h2>Complete payment.</h2><p class="muted">Only pay the amount confirmed by the agency. Verify the UPI name before paying.</p><div class="payment-box"><div class="amount-label">CONFIRMED AMOUNT</div><strong id="payAmount">₹0</strong><div id="upiQr" class="qr-box"></div><code id="upiText">UPI ID not configured</code><button class="btn btn-ghost btn-small" id="copyUpi">Copy UPI ID</button></div><form id="paymentForm" class="form-stack"><input type="hidden" id="paymentOrderId"><label>UPI transaction/reference ID<input id="paymentReference" required maxlength="100" placeholder="Enter transaction reference"></label><label>Payment note (optional)<input id="paymentNote" maxlength="250" placeholder="Any details"></label><button class="btn btn-primary full" type="submit">Submit payment for verification</button></form><p class="form-note">Submitting a reference does not automatically verify payment. Admin checks it against the payment record.</p></div></dialog>
+
+  <!-- Admin login / dashboard -->
+  <dialog id="adminDialog" class="modal modal-wide"><form method="dialog" class="modal-close"><button aria-label="Close">×</button></form><div class="modal-inner"><div class="eyebrow">PRIVATE WORKSPACE</div><div id="adminLoginView"><h2>Admin sign in.</h2><p class="muted">Use the admin account created in Supabase Auth and approved in the admin allow-list.</p><form id="adminLoginForm" class="form-stack"><label>Admin email<input type="email" id="adminEmail" required></label><label>Password<input type="password" id="adminPassword" required></label><button class="btn btn-primary full" type="submit">Secure sign in</button></form></div><div id="adminDashboard" hidden><div class="panel-title"><div><h2>Operations overview.</h2><p class="muted">Manage incoming requests and payments.</p></div><button class="btn btn-ghost btn-small" id="adminSignOut">Sign out</button></div><div class="admin-stats" id="adminStats"></div><div class="admin-toolbar"><h3>Project requests</h3><button class="btn btn-ghost btn-small" id="refreshAdmin">↻ Refresh</button></div><div id="adminOrders" class="order-list"></div></div></div></dialog>
+
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+</body>
+</html>
