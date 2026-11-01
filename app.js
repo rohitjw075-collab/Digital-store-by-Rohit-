@@ -1,8 +1,8 @@
 // Waghmare Digital Solutions — frontend
 // 1) Paste your Supabase project URL and publishable/anon key below.
 // 2) Never put a service_role key or admin password in this file.
-const SUPABASE_URL = "YOUR_SUPABASE_PROJECT_URL";
-const SUPABASE_ANON_KEY = "YOUR_SUPABASE_PUBLISHABLE_OR_ANON_KEY";
+const SUPABASE_URL = "https://lodfbbsumvmpvdyagglb.supabase.co";
+const SUPABASE_ANON_KEY = "sb_publishable_kVv0cjKV23aP4sXV75m0zg_XBr9U43Y";
 const UPI_ID = "8329461513@axl";
 const BUSINESS_NAME = "Waghmare Digital Solutions";
 const STORAGE_BUCKET = "project-files";
